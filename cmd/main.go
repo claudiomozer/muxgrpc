@@ -6,7 +6,7 @@ import (
 	"time"
 
 	data_user "github.com/claudiomozer/muxgrpc/internal/data/user"
-	"github.com/claudiomozer/muxgrpc/internal/presentation/controllers"
+	controllers "github.com/claudiomozer/muxgrpc/internal/presentation/controllers/http"
 	"github.com/claudiomozer/muxgrpc/pkg/infra/repositories/static"
 	"github.com/gorilla/mux"
 )

@@ -5,7 +5,7 @@ import (
 	"net/http"
 
 	domain_user "github.com/claudiomozer/muxgrpc/internal/domain/user"
-	controllers_protocols "github.com/claudiomozer/muxgrpc/internal/presentation/controllers/protocols"
+	controllers_protocols "github.com/claudiomozer/muxgrpc/internal/presentation/controllers/http/protocols"
 )
 
 type CreateUserController struct {

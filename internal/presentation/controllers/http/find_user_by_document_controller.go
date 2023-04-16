@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"net/http"
 
-	controllers_protocols "github.com/claudiomozer/muxgrpc/internal/presentation/controllers/protocols"
+	controllers_protocols "github.com/claudiomozer/muxgrpc/internal/presentation/controllers/http/protocols"
 	"github.com/gorilla/mux"
 )
 
