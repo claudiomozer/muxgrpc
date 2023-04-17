@@ -1,11 +1,11 @@
-package controllers
+package http
 
 import (
 	"encoding/json"
 	"net/http"
 
 	domain_user "github.com/claudiomozer/muxgrpc/internal/domain/user"
-	controllers_protocols "github.com/claudiomozer/muxgrpc/internal/presentation/controllers/http/protocols"
+	controllers_protocols "github.com/claudiomozer/muxgrpc/internal/presentation/controllers/protocols"
 )
 
 type CreateUserController struct {

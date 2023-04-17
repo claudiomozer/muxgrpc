@@ -1,10 +1,10 @@
-package controllers
+package http
 
 import (
 	"encoding/json"
 	"net/http"
 
-	controllers_protocols "github.com/claudiomozer/muxgrpc/internal/presentation/controllers/http/protocols"
+	controllers_protocols "github.com/claudiomozer/muxgrpc/internal/presentation/controllers/protocols"
 	"github.com/gorilla/mux"
 )
 

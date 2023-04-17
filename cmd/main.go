@@ -6,7 +6,7 @@ import (
 	"time"
 
 	data_user "github.com/claudiomozer/muxgrpc/internal/data/user"
-	controllers "github.com/claudiomozer/muxgrpc/internal/presentation/controllers/http"
+	http_controllers "github.com/claudiomozer/muxgrpc/internal/presentation/controllers/http"
 	"github.com/claudiomozer/muxgrpc/pkg/infra/repositories/static"
 	"github.com/gorilla/mux"
 )
@@ -15,8 +15,8 @@ func main() {
 	r := mux.NewRouter()
 	userRepository := static.NewUserRepository()
 	service := data_user.New(userRepository, userRepository)
-	createUserController := controllers.NewCreateUserController(service)
-	findUserByDocument := controllers.NewFindUserByDocumentController(service)
+	createUserController := http_controllers.NewCreateUserController(service)
+	findUserByDocument := http_controllers.NewFindUserByDocumentController(service)
 
 	r.Handle("/users", createUserController).Methods("POST")
 	r.Handle("/users/{document}", findUserByDocument).Methods("GET")
